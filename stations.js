@@ -1,9 +1,9 @@
-const Station = require("./Station.js");
+const Station = require("./const/Station.js");
 const XLS = require("xlsx");
-const path = require('path');
+const path = require("path");
 
 const curr = path.dirname(__filename);
-const filePath = path.join(curr, 'stations.xls');
+const filePath = path.join(curr, "/const/stations.xls");
 const workbook = XLS.readFile(filePath);
 
 const sheetName = workbook.SheetNames[0];
