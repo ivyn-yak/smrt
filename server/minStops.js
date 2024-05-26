@@ -33,4 +33,9 @@ function minStops(stations, start, end) {
   return null;
 }
 
-console.log(minStops(stnList, "Tan Kah Kee", "Bras Basah"));
+// console.log(minStops(stnList, "Tan Kah Kee", "Bras Basah"));
+
+module.exports = {
+  stnList: stnList, 
+  minStops: minStops
+};
